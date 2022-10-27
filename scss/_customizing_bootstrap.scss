@@ -1,0 +1,22 @@
+
+$my-yellow: #FED340;
+$white: #FFFFFF;
+
+$primary: $my-yellow;
+$secondary:  $white;
+
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+
+$accordion-button-icon: url("data:image/svg+xml,<svg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M14 28C21.732 28 28 21.732 28 14C28 6.268 21.732 0 14 0C6.268 0 0 6.268 0 14C0 21.732 6.268 28 14 28Z' fill='#FED340'/><g clip-path='url(#clip0_0_1)'><path d='M13.395 9.42871V12.9077H10V14.5212H13.395V18.0001H15.1765V14.5212H18.5714V12.9077H15.1765V9.42871H13.395Z' fill='white'/></g><defs><clipPath id='clip0_0_1'><rect width='9' height='9' fill='white' transform='translate(10 9)'/></clipPath></defs></svg>") !default;
+$accordion-button-active-icon: url("data:image/svg+xml,<svg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M14 28C21.732 28 28 21.732 28 14C28 6.268 21.732 0 14 0C6.268 0 0 6.268 0 14C0 21.732 6.268 28 14 28Z' fill='#FED340'/><g clip-path='url(#clip0_0_1)'><path d='M10 14.25H18' stroke='white' stroke-width='1.5'/></g><defs><clipPath id='clip0_0_1'><rect width='8' height='2' fill='white' transform='translate(10 13)'/></clipPath></defs></svg>") !default;
+$accordion-icon-width: 2rem;
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+
+.accordion-button:not(.collapsed)::after {
+  box-shadow: 0 0 0 0.3rem rgba(254, 211, 64, 0.4);
+  border-radius: 50%;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
